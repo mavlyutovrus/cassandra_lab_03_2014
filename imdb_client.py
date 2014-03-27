@@ -3,7 +3,7 @@ from cassandra.cluster import Cluster
 
 class TClient(object):
     def __init__(self):
-        self.cluster = Cluster(['54.185.17.217'])
+        self.cluster = Cluster(['<!!!PUT IP HERE!!!>'])
         self.session = self.cluster.connect()
         # do not forget to switch into your key space!
         self.session.execute("use example;")

@@ -25,7 +25,7 @@ for line in open("../imdb/movies_dump.txt"):
         genres_and_ratings += [(genre, float(rating), title)]
 genres_and_ratings.sort()
 
-cluster = Cluster(['54.185.17.217'])
+cluster = Cluster(['<!!!PUT IP HERE!!!>'])
 session = cluster.connect()
 #session.execute("USE example;")
 session.execute("USE <!!!YOUR KEY SPACE HERE!!!>;")
